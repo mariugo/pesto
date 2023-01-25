@@ -4,8 +4,8 @@ class RecipeWarning {
   final String label;
   final IconData icon;
 
-  RecipeWarning({
-    required this.label,
-    required this.icon,
-  });
+  const RecipeWarning(
+    this.label,
+    this.icon,
+  );
 }

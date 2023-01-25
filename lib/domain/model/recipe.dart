@@ -6,14 +6,14 @@ class Recipe {
   final String title;
   final String description;
   final List<RecipeWarning> warnings;
-  final List<RecipeIngredient> ingridients;
+  final List<RecipeIngredient> ingredients;
 
-  Recipe({
+  const Recipe({
     required this.imagePath,
     required this.title,
     required this.description,
-    required this.warnings,
-    required this.ingridients,
+    this.warnings = const [],
+    this.ingredients = const [],
   });
 
   String get id => title.toLowerCase().replaceAll(' ', '-');
